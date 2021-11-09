@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Biến Kiểu Dữ Liệu Toán Tử</title>
+</head>
+<body>
+
+<script>
+    inputPhysics = prompt('Enter the Physics');
+    inputChemistry = prompt('Enter the Chemistry');
+    inputBiological = prompt('Enter the Biological');
+
+    let Physics = parseFloat(inputPhysics);
+    let Chemistry = parseFloat(inputChemistry);
+    let Biological = parseFloat(inputBiological);
+
+    let average = (Physics + Chemistry + Biological)/3;
+    let total = Physics + Chemistry + Biological ;
+
+    document.write('Điểm Lý:' + Physics);
+    document.write('<br/>');
+    document.write('Điểm Hóa: '+ Chemistry);
+    document.write('<br/>');
+    document.write('Điểm Sinh' + Biological);
+    document.write('<br/>');
+    document.write('Điểm trung bình:' + average);
+    document.write('<br/>');
+    document.write('Điểm tổng:' + total);
+
+
+</script>
+</body>
+</html>
