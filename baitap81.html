@@ -7,26 +7,18 @@
 <body>
 
 <script>
-    inputPhysics = prompt('Enter the Physics');
-    inputChemistry = prompt('Enter the Chemistry');
-    inputBiological = prompt('Enter the Biological');
 
-    let Physics = parseFloat(inputPhysics);
-    let Chemistry = parseFloat(inputChemistry);
-    let Biological = parseFloat(inputBiological);
+    let Physics = parseFloat(prompt('Enter the Physics'));
+    let Chemistry = parseFloat(prompt('Enter the Chemistry'));
+    let Biological = parseFloat(prompt('Enter the Biological'));
 
-    let average = (Physics + Chemistry + Biological)/3;
-    let total = Physics + Chemistry + Biological ;
+    let sum = Physics + Chemistry + Biological ;
+    let average = sum/3;
 
-    document.write('Điểm Lý:' + Physics);
-    document.write('<br/>');
-    document.write('Điểm Hóa: '+ Chemistry);
-    document.write('<br/>');
-    document.write('Điểm Sinh' + Biological);
-    document.write('<br/>');
     document.write('Điểm trung bình:' + average);
-    document.write('<br/>');
-    document.write('Điểm tổng:' + total);
+    document.write('<br/>')
+    document.write('Điểm tổng:'+ sum);
+
 
 
 </script>

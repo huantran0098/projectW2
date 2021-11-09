@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From</th>
+        <th>To</th>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="input"></td>
+        <td>
+            <select name="" id="nhap">
+                <option value="1">VietNam</option>
+                <option value="23000">USD</option>
+            </select>
+        </td>
+        <td>
+            <select name="" id="xuat">
+                <option value="23000">USD</option>
+                <option value="1">VietNam</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="change()">Convert</button>
+        </td>
+
+    </tr>
+</table>
+
+<h2>Result:<span id="display"></span></h2>
+</body>
+<script>
+    function change() {
+        let input = parseFloat(document.getElementById('input').value);
+        let from = parseFloat(document.getElementById('nhap').value);
+        let to = parseFloat(document.getElementById('xuat').value);
+
+        document.getElementById('display').innerText = (input * from / to).toFixed(2)
+    }
+
+
+</script>
+</html>
